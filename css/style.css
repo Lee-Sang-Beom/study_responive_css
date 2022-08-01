@@ -1,0 +1,157 @@
+/* Layout */
+#header {
+    background: url("../img/header_bg.jpg") repeat-x center top;
+    
+}
+
+/* container */
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    background-color: rgba(0,0,0,0.3);
+}
+
+/* header */
+.header{
+    height: 327px;
+}
+
+.header .header_menu{
+    text-align: right;
+    font-family: 'Abel', sans-serif;
+}
+
+.header .header_menu a{
+    color:#fff;
+    display: inline-block;
+    padding: 8px 0 0 8px;
+    transition: color 0.3s ease; /* 0.3초간 ease효과  */
+    
+}
+
+.header .header_menu a:hover{
+    color:#ccc;
+}
+
+.header .header_tit{
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 55px;
+    font-family: 'Abel', sans-serif;
+    
+}
+
+.header .header_tit h1{
+    font-size: 30px;
+    color : white;
+    background-color: #51b0dc;
+    display: inline-block;
+    padding: 5px 30px 5px 30px;
+    font-weight: 900;
+    letter-spacing: 2px;
+
+    transition: box-shadow 0.25s ease-in-out; /* box-shadow에게 transition 적용 */
+}
+
+.header .header_tit h1:hover{
+    box-shadow : 
+        inset -9em 0 0 0 #257fac,
+        inset 9em 0 0 0 #257fac;
+         /*
+        - inset : 박스 내부에 적용 
+        - 안쪽으로만 반대방향으로(-9em) 수축
+        - 색 #257fac
+     */
+}
+
+.header .header_tit a{
+    font-size: 14px;
+    color : white;
+    background-color: #4a94bf;
+    display: inline-block;
+    padding: 10px 20px 10px 20px;
+    margin-top: -6px;
+    font-weight: 400;
+    transition: box-shadow 0.25s ease-in; /*box-shadow의 효과를 0.25초동안 ease-in-out 효과가 일어나게함 */
+}
+
+.header .header_tit a:hover{
+    box-shadow : 
+        inset 0 0 0 5px rgba(75,154,191,0.9),
+        inset 0 0 0 100px rgba(0,0,0,0.1); /* 테두리 */
+
+}
+
+.header .header_icon{
+    text-align: center;
+    margin-top: 40px;
+    padding-bottom : 45px;
+}
+
+.header .header_icon li{
+    display: inline;
+    margin : 0 6px;
+}
+
+.header .header_icon li a{
+    position: relative;
+    background: #3192bf;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    color : #fff;
+    display: inline-block;
+    font-size : 35px;
+    line-height : 60px;
+}
+
+.header .header_icon li i{
+    margin-left: -8px;
+}
+
+
+.header .header_icon li a span{ 
+    position: absolute;
+    left: 50%;
+    top : -40%;
+    width: 40px;
+    font-size : 11px;
+    line-height: 1.6;
+    transform : translateX(-50%);
+    transition: all 0.3s ease;
+    background-color: #3192bf;
+    border-radius: 5px 0;
+    opacity: 0;
+}
+
+.header .header_icon li a span:before{ 
+    content : '';
+    position : absolute;
+    left: 40%;
+    bottom : -5px;
+    border-top:5px solid #3192bf;
+    border-left:5px solid transparent;
+    border-right:5px solid transparent;
+}
+
+.header .header_icon li a:hover span{ 
+    opacity: 1;
+    top: -30px; /*애니메이션이 top -30px로 올라가는 것으로 출력*/
+}
+
+.header .header_icon li a:hover {
+    box-shadow: 
+       inset 0 0 0 3px rgba(75,154,191,0.9), /*테두리*/
+       inset 0 0 0 3px rgba(0,0,0,0.3);
+}
+
+@media (max-width : 1220px) {
+    .container {
+        width: 100%;
+    }
+
+    .row{
+        padding : 0 15px;
+    }
+}
+
