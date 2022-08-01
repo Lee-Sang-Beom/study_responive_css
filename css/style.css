@@ -1,14 +1,16 @@
 /* Layout */
 #header {
     background: url("../img/header_bg.jpg") repeat-x center top;
-    
+}
+
+#nav{
+    background-color: #fcfcfc;
 }
 
 /* container */
 .container {
     width: 1200px;
     margin: 0 auto;
-    background-color: rgba(0,0,0,0.3);
 }
 
 /* header */
@@ -147,6 +149,57 @@
     
 }
 
+/* nav : 전체 메뉴 */
+.nav{
+    overflow: hidden;
+    padding : 25px 0;
+}
+
+.nav > div {
+    float: left;
+    width: 33.33%;
+}
+
+.nav > div:last-child {
+    width: 33.34%;
+}
+
+.nav > div ol{
+    overflow: hidden;
+}
+
+.nav > div li {
+    float: left;
+    width: 50%;
+    position: relative;
+    padding-left: 8px;
+    padding-bottom : 3px;
+    box-sizing:border-box;
+}
+
+.nav > div li:before {
+    content : '';
+    width: 3px;
+    height: 3px;
+    background-color: #25a2d0;
+    border-radius: 50%;
+    position : absolute;
+    left: 0;
+    top: 10px;
+}
+
+.nav > div li:last-child { /* 마지막 li는 나눠지면 안됨 */
+    width: 100%;
+}
+
+.nav > div h3 {
+    font-size: 18px;
+    color: #25a2d0;
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+
+
 @media (max-width : 1220px) {
     .container {
         width: 100%;
@@ -156,4 +209,3 @@
         padding : 0 20px;
     }
 }
-
