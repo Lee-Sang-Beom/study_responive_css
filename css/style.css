@@ -188,6 +188,25 @@
     top: 10px;
 }
 
+.nav > div li a{
+    position: relative;
+}
+
+.nav > div li a:after {
+    content: '';
+    width: 0%;
+    height: 1px;
+    background-color: #25aad0;
+    transition: all 0.2s ease-out;
+    position : absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.nav > div li:hover a:after {
+    width: 100%;
+}
+
 .nav > div li:last-child { /* 마지막 li는 나눠지면 안됨 */
     width: 100%;
 }
