@@ -10,10 +10,41 @@
 #title{
     background-color: #eaf7fd;
 }
+
+#contents .container{
+    border-left: 1px solid #dbdbdb;
+    border-right: 1px solid #dbdbdb;
+}
+
+#cont_left {
+    float: left;
+    width: 250px;
+}
+
+#cont_center {
+    overflow: hidden;
+    margin-right : 250px;
+    height: 1000px;
+    border-left: 1px solid #dbdbdb;
+    border-right: 1px solid #dbdbdb;
+}
+
+#cont_right {
+    position : absolute;
+    top:0;
+    right:0;
+    width: 250px;
+}
+
+#footer {
+    border-top: 1px solid #dbdbdb;
+}
+
 /* container */
 .container {
     width: 1200px;
     margin: 0 auto;
+    position: relative;
 }
 
 /* header */
@@ -255,6 +286,12 @@
         inset 0 0 0 100px rgba(0,0,0,0.1);
 }
 
+/* contents */
+.column{
+    padding:15px;
+    border-bottom: 1px solid #dbdbdb;
+}
+
 /* mediaquery ^/
 
 /* 화면 너비 : 0~1200px */
@@ -265,6 +302,10 @@
 
     .row{
         padding : 0 20px;
+    }
+
+    #contents .container{
+        border : 0;
     }
 }
 
@@ -300,7 +341,17 @@
 
 /* 화면 너비 : 0~768px */
 @media (max-width : 768px) {
+    #cont_left{
+        width: 33.33333%;
+    }
 
+    #cont_center{
+        width: 33.33333%;
+    }
+    
+    #cont_right{
+        width: 33.33333%;
+    }
 }
 
 
@@ -319,7 +370,6 @@
         display:none;
     }
 
-
     .nav > div li {
         width: 50%;
     }
@@ -335,6 +385,22 @@
 
 /* 화면 너비 : 0~480px */
 @media (max-width : 480px) {
+    #cont_left{
+        float: none;
+        width: 100%;
+        height: 10%;
+    }
+
+    #cont_center{
+        width: 100%;
+        height: 10%;
+    }
+
+    #cont_right{
+        position: static;
+        width: 100%;
+        height: 10%;
+    }
 
 }
 
