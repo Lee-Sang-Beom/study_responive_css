@@ -292,6 +292,21 @@
     border-bottom: 1px solid #dbdbdb;
 }
 
+.column .col_tit{
+    font-size: 20px;
+    color:#2f7fa6;
+    padding-bottom:2px;
+}
+
+.column .col_desc{
+    font-size: 12px;
+    border-bottom : 1px dashed #dbdbdb;
+    padding-bottom: 10px;
+    color: #878787;
+    line-height: 1.5;
+
+}
+
 /* mediaquery ^/
 
 /* 화면 너비 : 0~1200px */
@@ -348,7 +363,7 @@
     #cont_center{
         width: 33.33333%;
     }
-    
+
     #cont_right{
         width: 33.33333%;
     }
