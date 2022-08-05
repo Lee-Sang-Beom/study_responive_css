@@ -3,6 +3,10 @@
 
 <head>
     <meta charset="UTF-8">
+
+    <!-- viewport -->
+    <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
+    
     <meta name="author" content="StartResponsiveWeb">
     <meta name="description" content="반응형 사이트 시작하기">
     <meta name="keywords" content="반응형사이트">
@@ -158,9 +162,6 @@
                         <!-- title, description -->
                         <h4 class="col_tit">Title</h4>
                         <p class="col_desc"> 이 부분은 설명입니다. </p>
-                        <!-- 
-
-                        -->
 
                         <!-- Menu -->
                         <div class="menu">
@@ -213,11 +214,31 @@
                     </article>
                     <article class="column col3">
                         <!-- title, description -->
-                        <h4 class="col_tit">Title</h4>
-                        <p class="col_desc"> 이 부분은 설명입니다. </p>
-                        <!-- 
-                                                
-                        -->
+                        <h4 class="col_tit">Blog</h4>
+                        <p class="col_desc"> 해상도에 따라 이미지를 다르게 표현하는 방법입니다. </p>
+                        <!-- blog1  -->
+                        <div class="blog1">
+                            <h5 class="ir_su">image1</h5>
+                            <figure>
+                                 <!-- css파일에서 mediaquery을 이용해 화면비율에 따른 활성화이미지 설정 (1,2배 해상도) 
+                                <img src="img/blog1_@1.jpg" alt="normal img" class = "img-normal"/>
+                                <img src="img/blog1_@2.jpg" alt="reting img" class = "img-retina"/> -->
+
+                                <img src="img/blog3_@1.jpg" srcset = "img/blog3_@1.jpg 1x, img/blog3_@2.jpg 2x, img/blog3_@3.jpg 2x" alt="normal img" width="100%"/>
+                                <figcaption>반응형 웹 사이트 이미지 글입니다. 반응형 웹 사이트 이미지 글입니다. 반응형 웹 사이트 이미지 글입니다. 반응형 웹 사이트 이미지 글입니다. 반응형 웹 사이트 이미지 글입니다.</figcaption>
+                            </figure>
+                        </div>
+
+                        <!-- blog2  -->
+                        <div class="blog2">
+                            <h5 class="ir_su">image2</h5>
+                            <figure>
+                                <!-- srcset이라는 속성을 이욯한, 화면비율에 따른 활성화이미지 설정 (1,2배 해상도) -->
+                                <img src="img/blog2_@1.jpg" srcset = "img/blog2_@1.jpg 1x, img/blog2_@2.jpg 2x" alt="normal img" width="100%"/>
+                                <!-- <img src="img/blog2_@2.jpg" alt="reting img"/> -->
+                                <figcaption>반응형 웹 사이트 이미지 글입니다. 반응형 웹 사이트 이미지 글입니다. 반응형 웹 사이트 이미지 글입니다. 반응형 웹 사이트 이미지 글입니다. 반응형 웹 사이트 이미지 글입니다.</figcaption>
+                            </figure>
+                        </div>
                     </article>
                 </section>
                 <section id="cont_center">

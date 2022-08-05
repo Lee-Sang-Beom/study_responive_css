@@ -24,7 +24,7 @@
 #cont_center {
     overflow: hidden;
     margin-right : 250px;
-    height: 1000px;
+    height: 1300px;
     border-left: 1px solid #dbdbdb;
     border-right: 1px solid #dbdbdb;
 }
@@ -407,6 +407,8 @@
     text-overflow: ellipsis;
     display: -webkit-box;
     -webkit-box-orient: vertical;
+
+    /*-webkit이용*/
     -webkit-line-clamp: 2; /* 2줄 효과 : 텍스트 초과시 ... */
     padding-left: 7px; /*before 가상요소가 왼쪽에 있으니, left*/
     padding-bottom: 4px;
@@ -423,6 +425,26 @@
     left: 0;
     top: 8px;
 }
+
+/* blog 1 */
+.blog1 img{
+    width: 100%;
+}
+
+.blog1 .img-retina{
+    display:none;
+}
+
+/* 화면비율 1.5 이상일 시, retina 활성화 */
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (min-device-pixel-ratio: 1.5),
+only screen and (min-resolution: 1.5dppx) {
+    .blog1 .img-retina {display: initial; /*initial : 최초 값*/}
+    .blog1 .img-normal {display: none;}
+}
+
+/* blog 2 */
+
 
 /* mediaquery ^/
 
