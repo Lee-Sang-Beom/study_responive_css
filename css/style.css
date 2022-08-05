@@ -462,16 +462,16 @@ only screen and (min-resolution: 1.5dppx) {
     background-size : cover; /* 가로세로 딱 맞게 */
 }
 
-/* 화면비율 1.5(retina환경) 이상일 시, retina 활성화 */
-@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
-only screen and (min-device-pixel-ratio: 1.5),
-only screen and (min-resolution: 1.5dppx) {
+/* 화면비율 1.5(retina환경) 이상일 시, 2x 활성화 */
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (min-device-pixel-ratio: 2),
+only screen and (min-resolution: 2dppx) {
     .blog2 .img-retina {
         background-image: url("../img/blog4_@2.jpg"); /* 화면비율 1.5이상 : 4_2.jpg */
     }
 }
 
-/* 화면비율 3(모바일 환경) 이상일 시, retina 활성화 */
+/* 화면비율 3(모바일 환경) 이상일 시, 3x 활성화 */
 @media only screen and (-webkit-min-device-pixel-ratio: 3),
 only screen and (min-device-pixel-ratio: 3),
 only screen and (min-resolution: 3dppx) {
@@ -479,6 +479,7 @@ only screen and (min-resolution: 3dppx) {
         background-image: url("../img/blog4_@3.jpg"); /* 화면비율 1.5이상 : 4_2.jpg */
     }
 }
+
 /* mediaquery ^/
 
 /* 화면 너비 : 0~1200px */
