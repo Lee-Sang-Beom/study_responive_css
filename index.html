@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="fonts/font-awesome.css">
     <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/lightgallery.css">
 
     <!-- favicon -->
     <link rel="icon" href="icon/favicon.jpg">
@@ -42,6 +43,7 @@
     <script src="js/jquery.min_1.12.4.js"></script>
     <script src="js/modernizr-custom.js"></script>
     <script src="js/slick.min.js"></script>
+    <script src="js/lightgallery.min.js"></script>
 
 
     <!-- header -->
@@ -77,8 +79,6 @@
             </div>
 
             <!-- header menu -->
-
-
         </div>
     </header>
 
@@ -275,11 +275,22 @@
                     </article>
                     <article class="column col5">
                         <!-- title, description -->
-                        <h4 class="col_tit">Title</h4>
-                        <p class="col_desc"> 이 부분은 설명입니다. </p>
-                        <!-- 
-                            
-                        -->
+                        <h4 class="col_tit">Blend Effect</h4>
+                        <p class="col_desc"> Background Blend Mode & Mix-Blend-Mode </p>
+                        
+                        <!-- light box -->
+                        <div class="lightbox square clearfix">
+                            <a href="img/light01_s.jpg"><img src="img/light01.jpg" alt="img"></img></a>
+                            <a href="img/light02_s.jpg"><img src="img/light02.jpg" alt="img"></img></a>
+                            <a href="img/light03_s.jpg"><img src="img/light03.jpg" alt="img"></img></a>
+                            <a href="img/light04_s.jpg"><img src="img/light04.jpg" alt="img"></img></a>
+                            <a href="img/light05_s.jpg"><img src="img/light05.jpg" alt="img"></img></a>
+                            <a href="img/light06_s.jpg"><img src="img/light06.jpg" alt="img"></img></a>
+                            <a href="img/light07_s.jpg"><img src="img/light07.jpg" alt="img"></img></a>
+                            <a href="img/light08_s.jpg"><img src="img/light08.jpg" alt="img"></img></a>
+                            <a href="img/light09_s.jpg"><img src="img/light09.jpg" alt="img"></img></a>
+                            <a href="img/light10_s.jpg"><img src="img/light10.jpg" alt="img"></img></a>
+                        </div>
                     </article>
                     <article class="column col6">
                         <!-- title, description -->
@@ -344,6 +355,14 @@
                     autoplay : false,
                 }
             }]
+        });
+    </script>
+
+
+    <script type="text/javascript">
+        //  lightbox
+        $(".lightbox").lightGallery({
+
         });
     </script>
 </body>
