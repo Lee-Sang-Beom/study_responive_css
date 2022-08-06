@@ -637,6 +637,20 @@ only screen and (min-resolution: 3dppx) {
  .square a:nth-child(9):hover img {filter: sepia(120%);}
  .square a:nth-child(10):hover img {filter: sepia(120%) hue-rotate(120deg);}
 
+/* iframe*/
+.video {
+    width: 100%;
+    position: relative;
+    padding-bottom:60%;
+    overflow: hidden;
+}
+
+.video iframe{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
 /* mediaquery ^/
 
 /* 화면 너비 : 0~1200px */

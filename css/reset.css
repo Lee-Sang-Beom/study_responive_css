@@ -88,6 +88,11 @@
             width: 100%;
         }
 
+        /* 반응형 비디오 */
+        video{
+            width: 100%;
+        }
+
         /* IR 효과 */
         .ir_pm {
             display: block;
