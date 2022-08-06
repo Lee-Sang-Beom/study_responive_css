@@ -651,6 +651,38 @@ only screen and (min-resolution: 3dppx) {
     height: 100%;
 }
 
+/* footer */
+.footer {
+    text-align: center;
+    padding : 15px 10px;
+    line-height: 2;
+}
+
+.footer li {
+    display: inline;
+    padding : 0 10px;
+    white-space: nowrap;
+    position: relative;
+}
+
+.footer li:before {
+    content: '';
+    height: 10px;
+    width: 1px;
+    background-color: #dbdbdb;
+    position: absolute;
+    left: 0;
+    top: 2px;
+}
+
+.footer li:first-child:before {
+    width: 0;
+}
+
+
+.footer address{
+    padding-top: 20px;
+}
 /* mediaquery ^/
 
 /* 화면 너비 : 0~1200px */
@@ -809,6 +841,20 @@ only screen and (min-resolution: 3dppx) {
         display: none;
     }
     
+    #cont_right { 
+        overflow: hidden;
+    }
+
+    #cont_right .column{ 
+        float: left;
+        width: 33.333333%;
+        box-sizing: border-box;
+    }
+
+    #cont_right .column.col7, .column.col8{ 
+        border-right : 1px solid #dbdbdb;
+        /* border-bottom: 0; */
+    }
 }
 
 /* 화면 너비 : 0~480px */
@@ -835,4 +881,17 @@ only screen and (min-resolution: 3dppx) {
     .square a:nth-child(5n){
         display: block;
     }
+
+
+    #cont_right .column{ 
+        float: none;
+        width: 100%;
+    }
+
+    #cont_right .column.col7, .column.col8{ 
+        border-right : 0;
+        border-bottom: 1px solid #dbdbdb;
+    }
+
+    
 }
