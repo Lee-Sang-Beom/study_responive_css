@@ -78,6 +78,16 @@
             font-weight: normal;
         }
 
+        /* 버튼 초기화 */
+        button{
+            border : 0; /* 버튼 경계선 제거 */
+        }
+
+        /* 반응형 이미지 */
+        img{
+            width: 100%;
+        }
+
         /* IR 효과 */
         .ir_pm {
             display: block;

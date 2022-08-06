@@ -480,6 +480,124 @@ only screen and (min-resolution: 3dppx) {
     }
 }
 
+/* 이미지 슬라이드 */
+.slider figure {
+    position: relative;
+}
+
+.slider figcaption {
+    position: absolute;
+    bottom:0;
+    left:0;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: rgba(0,0,0,0.5);
+    color: #fff;
+    font-size : 18px;
+}
+
+.slider figcaption em {
+   display: block;
+   font-weight: bold;
+   text-transform: uppercase;
+   font-size: 28px;
+   font-family:'Abel', sans-seif;
+   opacity: 0; /*active 전에는 보이지 않음*/
+   transform: all .84s ease;
+   transform: translateX(50px);
+}
+
+.slider figcaption span {
+    display: block;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    opacity: 0;
+    transform: all .84s ease;
+    transform: translateX(50px);
+ }
+
+ /* 슬라이드 중, 활성화된 이미지 */
+ .slider .slick-active figcaption em{
+    opacity: 1;
+    transform: translateX(0);
+ }
+
+ .slider .slick-active figcaption span{
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.slider .slick-dots{
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+.slider .slick-dots li{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin: 5px;
+}
+
+.slider .slick-dots li button{
+    transition: background-color 0.5s ease;
+    transform: translateX(10px);
+}
+
+.slider .slick-dots li.slick-active button{
+    background-color: #2b91c8;
+}
+
+.slider .slick-dots li button{
+    font-size:0;
+    line-height: 0;
+    display: block;
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+    background-color: #5dbfeb;
+    border-radius: 50%;
+}
+
+.slider .slick-prev {
+    background-color: #5dbfeb;
+    color: #fff;
+    position: absolute;
+    display: inline-block;
+    left:0;
+    bottom: 0;
+    z-index:1000;
+    width: 70px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.slider .slick-prev:hover {
+    font-weight: bold;
+}
+
+.slider .slick-next {
+    background-color: #5dbfeb;
+    color: #fff;
+    position: absolute;
+    display: inline-block;
+    right: 0;
+    bottom: 0;
+    z-index:1000;
+    width: 70px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.slider .slick-next:hover {
+    font-weight: bold;
+}
+
+
+
 /* mediaquery ^/
 
 /* 화면 너비 : 0~1200px */
@@ -523,6 +641,18 @@ only screen and (min-resolution: 3dppx) {
     
     .nav > div ol{
         margin : 10px 0;
+    }
+
+    .slider figure {
+        padding: 10px;
+    }
+
+    .slider figure em{
+        font-size: 15px;
+    }
+
+    .slider figure span{
+        font-size: 11px;
     }
 }
 
@@ -590,6 +720,19 @@ only screen and (min-resolution: 3dppx) {
         width: 100%;
         height: 10%;
     }
+
+    .slider figure {
+        padding: 10px;
+    }
+
+    .slider figure em{
+        font-size: 18px;
+    }
+
+    .slider figure span{
+        font-size: 12px;
+    }
+    
 }
 
 /* 화면 너비 : 0~480px */

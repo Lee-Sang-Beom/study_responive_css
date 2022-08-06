@@ -249,10 +249,28 @@
                         <h4 class="col_tit">Slick Slider</h4>
                         <p class="col_desc">slick.js를 이용한 이미지 슬라이드 효과입니다.</p>
                         <!-- 이미지 슬라이드 -->
-                        <div class="slider_slick">
-                            <div><img src="img/slider01.jpg" alt="이미지1"></div>
-                            <div><img src="img/slider02.jpg" alt="이미지2"></div>
-                            <div><img src="img/slider03.jpg" alt="이미지3"></div>
+                        <div class="slider">
+                            <figure>
+                                <div><img src="img/slider001.jpg" alt="이미지1"></div>
+                                <figcaption>
+                                    <em>Responsive Site1</em>
+                                    <span>슬라이드 플러그인을 이용한 반응형 이미지 슬라이드</span>
+                                </figcaption>
+                            </figure>
+                            <figure>
+                                <div><img src="img/slider001.jpg" alt="이미지2"></div>
+                                <figcaption>
+                                    <em>Responsive Site2</em>
+                                    <span>슬라이드 플러그인을 이용한 반응형 이미지 슬라이드</span>
+                                </figcaption>
+                            </figure>
+                            <figure>
+                                <div><img src="img/slider001.jpg" alt="이미지3"></div>
+                                <figcaption>
+                                    <em>Responsive Site3</em>
+                                    <span>슬라이드 플러그인을 이용한 반응형 이미지 슬라이드</span>
+                                </figcaption>
+                            </figure>
                         </div>
                     </article>
                     <article class="column col5">
@@ -312,17 +330,18 @@
     </footer>
     <script>
         //이미지 슬라이더 : $(".클래스명").slick(효과option)
-        $(".slider_slick").slick({
+        $(".slider").slick({
             dots: true,
             Infinity:true,
             autoplay: true,
             autoplaySpeed: 3000,
-            arrows: false,
+            arrows: true,
             responsive: [{
-                breakpoint: 768,
+                breakpoint: 900,
                 settings: {
-                    arrows: true,
-                    dots: false
+                    arrows: false,
+                    dots: false,
+                    autoplay : false,
                 }
             }]
         });
