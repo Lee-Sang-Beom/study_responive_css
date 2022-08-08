@@ -388,8 +388,36 @@
     <script type="text/javascript">
         //  lightbox
         $(".lightbox").lightGallery({
-
+            autoplay: true,
+            pause:3000,
+            progressBar: true
         });
+    </script>
+
+    <script>
+        // 접기, 펼치기
+        $(".btn").click(function(e){
+            e.preventDefault();
+            $(".nav").slideToggle();
+            $(".btn").toggleClass("open"); // 버튼에 open이라는 클래스 추가
+
+            if($(".btn").hasClass("open")){
+                // open 클래스가 있을 때
+                $(".btn").find("i").attr("class", "fa fa-angle-up"); // btn 아래의 i태그를  찾고, attr(속성)을 변경해줌 (class를 찾고, 클래스명 변경)
+            }else{
+                // open 클래스가 없을 때 
+                $(".btn").find("i").attr("class", "fa fa-angle-down")
+            }
+        })
+
+        // nav를 펼친 상태에서, 모바일환경 이동 시 버그
+        $(window).resize(function(){
+            var browserWidth = $(window).width(); // 브라우저 width
+            if (browserWidth > 600){
+                $(".nav").removeAttr("style");
+                // .nav에 자동으로 display:block이 생겨서 나오는 버그이므로, width가 600이하일때는 style을 제거함
+            }
+        })
     </script>
 </body>
 

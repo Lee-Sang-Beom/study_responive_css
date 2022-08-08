@@ -187,6 +187,7 @@
 .nav{
     overflow: hidden;
     padding : 25px 0;
+    display: none;
 }
 
 .nav > div {
