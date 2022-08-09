@@ -685,7 +685,7 @@ only screen and (min-resolution: 3dppx) {
     padding-top: 20px;
 }
 
-/* 사이드 이펙트 1*/
+/* 사이드 이펙트 1 */
 .side1{
     position: relative;
     perspective: 600px; /*애니메이션 상위박스에 원근법 적용 : z-index 변화를 느낄 수 있음*/
@@ -734,6 +734,134 @@ only screen and (min-resolution: 3dppx) {
     z-index: 1; /*앞으로 이동*/
 }
 
+/* 사이드 이펙트 2 */
+.side2{
+    position: relative;
+    /* display: block; */
+    perspective: 600px;
+}
+
+.side2 .front{
+    transform-style: preserve-3d;
+    transform: rotateY(0deg);
+    transition: all 0.5s ease-in-out;
+    backface-visibility: hidden;
+}
+
+.side2 .back{
+    position: absolute;
+    top:0;
+    left: 0;
+    z-index: -1;
+    transform-style: preserve-3d;
+    transform: rotateY(180deg);
+    transition: all 0.5s ease-in-out;
+    backface-visibility: hidden;
+    width: 100%;
+    height: 100%;
+
+}
+
+.side2 .front figcaption{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) translateZ(100px);
+    /*중앙이동 + 텍스트는 붕 떠있는 느낌르오*/
+    text-align: center;
+}
+
+.side2 .back figcaption{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) translateZ(100px);
+    /*중앙이동 + 텍스트는 붕 떠있는 느낌르오*/
+    text-align: center;
+    /* display: black; */  
+}
+
+.side2 figcaption{
+    width: 60%;
+}
+
+.side2 figcaption h3{
+    color: #fff;
+    font-size:22px;
+    font-family: Abel;
+    font-weight: bold;
+    background-color: rgba(0,0,0,0.4);
+
+}
+
+.side2:hover .front{
+    transform: rotateY(-180deg);
+}
+
+.side2:hover .back{
+    transform: rotateY(0deg);
+    z-index: 1;
+}
+
+/* 사이드 이펙트 3 */
+.side3{
+    position: relative;
+    background-color: #fff;
+}
+
+.side3 h3{
+    font-size: 16px;
+}
+
+.side3 h3 em{
+    display: block; /* hover /n effect효과가 나타나게 */
+    font-weight: bold;
+}
+
+.side3 img{
+    transition: all 0.3s ease;
+}
+
+.side3:hover img{
+    opacity: 0.4;
+}
+
+.side3 figcaption{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    /*x축으로 350%만큼 이동, y축으로 -50%만큼 이동*/
+    /*rotate : 180도 회전, rotatey : 180도 좌우대칭 */
+    transform: translate(350%, -50%) rotate(180deg); 
+    opacity: 0;
+    text-transform: uppercase;
+    color : #fff;
+    text-align  :center;
+    transition: all 0.3s ease;
+}
+
+.side3 figcaption::before{ /*figcaption과 h3사이에 위치*/
+    content: '';
+    width: 100px;
+    height: 100px;
+    background-color: #000;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: -1;
+    transform: translate(-50%,-50%);
+
+}
+
+.side3:hover figcaption{
+    /*x축으로 -50%만큼 이동, y축으로 -50%만큼 이동*/
+    /*rotate : 0도상태로 다시 회전 */
+    transform: translate(-50%, -50%) rotate(0deg); 
+    opacity: 1;
+
+}
 
 /* mediaquery ^/
 /* 화면 너비 : 0~1200px */
