@@ -5,8 +5,9 @@
     <meta charset="UTF-8">
 
     <!-- viewport -->
-    <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
-    
+    <meta name="viewport"
+        content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
+
     <meta name="author" content="StartResponsiveWeb">
     <meta name="description" content="반응형 사이트 시작하기">
     <meta name="keywords" content="반응형사이트">
@@ -117,8 +118,6 @@
                             <li><a href="#">상대주소와 절대주소</a></li>
                             <li><a href="#">CSS float</a></li>
                             <li><a href="#">이미지 표현 방법</a></li>
-                            <li><a href="#">이미지 스프라이트</a></li>
-                            <li><a href="#">IR 효과</a></li>
                             <li><a href="#">이미지 최적화</a></li>
                             <li><a href="#">background-color</a></li>
                             <li><a href="#">border-style</a></li>
@@ -133,7 +132,6 @@
                             <li><a href="#">웹 접근성</a></li>
                             <li><a href="#">W3C</a></li>
                             <li><a href="#">웹 접근성 연구소</a></li>
-                            <li><a href="#">네이버 널리</a></li>
                             <li><a href="#">Webstandard</a></li>
                         </ol>
                     </div>
@@ -162,13 +160,13 @@
                     <h3 class="ir_su">반응형 사이트 left contents</h3>
                     <article class="column col1">
                         <!-- title, description -->
-                        <h4 class="col_tit">Title</h4>
-                        <p class="col_desc"> 이 부분은 설명입니다. </p>
+                        <h4 class="col_tit">메뉴</h4>
+                        <p class="col_desc"> 이 부분은 사이드 메뉴입니다. </p>
 
                         <!-- Menu -->
                         <div class="menu">
                             <ul>
-                                <li><a href="#"> Cafe <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
+                                <li><a href="#"> HOME <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
                                 </li>
                                 <li><a href="#"> Tutorial <i class="fa fa-angle-double-right"
                                             aria-hidden="true"></i></a></li>
@@ -187,7 +185,7 @@
                     <article class="column col2">
                         <!-- title, description -->
                         <h4 class="col_tit">Notice</h4>
-                        <p class="col_desc"> 게시판 영역의 한 줄 효과, 두 줄 효과의 게시판입니다. </p>
+                        <p class="col_desc"> 게시판 영역의 한 줄 효과, 두 줄 효과를 표현하는 부분입니다. </p>
 
                         <!-- 게시판 1 -->
                         <div class="notice1 mt15">
@@ -198,7 +196,8 @@
                                 <li><a href="#">해당 줄은 한 줄 효과입니다.</a></li>
                                 <li><a href="#">해당 줄은 한 줄 효과입니다.</a></li>
                             </ul>
-                            <a href="#" class="more" title="더보기">More <i class="fa fa-plus-circle" aria-hidden="true"></i></a>
+                            <a href="#" class="more" title="더보기">More <i class="fa fa-plus-circle"
+                                    aria-hidden="true"></i></a>
                         </div>
 
                         <!-- 게시판 2 -->
@@ -209,26 +208,29 @@
                                 <li><a href="#">해당 줄은 두 줄 효과입니다. 해당 줄은 두 줄 효과입니다. 해당 줄은 두 줄 효과입니다.</a></li>
                                 <li><a href="#">해당 줄은 두 줄 효과입니다. 해당 줄은 두 줄 효과입니다. 해당 줄은 두 줄 효과입니다.</a></li>
                                 <li><a href="#">해당 줄은 두 줄 효과입니다. 해당 줄은 두 줄 효과입니다. 해당 줄은 두 줄 효과입니다.</a></li>
-                                <li><a href="#">해당 줄은 두 줄 효과입니다. 해당 줄은 두 줄 효과입니다. 해당 줄은 두 줄 효과입니다.</a></li>
                             </ul>
-                            <a href="#" class="more" title="더보기">More <i class="fa fa-plus-circle" aria-hidden="true"></i></a>
+                            <a href="#" class="more" title="더보기">More <i class="fa fa-plus-circle"
+                                    aria-hidden="true"></i></a>
                         </div>
 
                     </article>
                     <article class="column col3">
                         <!-- title, description -->
                         <h4 class="col_tit">Blog</h4>
-                        <p class="col_desc"> 해상도에 따라 이미지를 다르게 표현하는 방법입니다. </p>
+                        <p class="col_desc"> 해상도에 따라 이미지를 다르게 표현하는 방법입니다. 화면 폭과 단말기에 따라 이미지를 반응형으로 보여주기 위해 srcset을 사용합니다. </p>
                         <!-- blog1  -->
                         <div class="blog1">
                             <h5 class="ir_su">image1</h5>
                             <figure>
-                                 <!-- css파일에서 mediaquery을 이용해 화면비율에 따른 활성화이미지 설정 (1,2배 해상도) 
+                                <!-- css파일에서 mediaquery을 이용해 화면비율에 따른 활성화이미지 설정 (1,2배 해상도) 
                                 <img src="img/blog1_@1.jpg" alt="normal img" class = "img-normal"/>
                                 <img src="img/blog1_@2.jpg" alt="reting img" class = "img-retina"/> -->
 
-                                <img src="img/blog3_@1.jpg" srcset = "img/blog3_@1.jpg 1x, img/blog3_@2.jpg 2x, img/blog3_@3.jpg 2x" alt="normal img" width="100%"/>
-                                <figcaption>반응형 웹 사이트 이미지 글입니다. 반응형 웹 사이트 이미지 글입니다. 반응형 웹 사이트 이미지 글입니다. 반응형 웹 사이트 이미지 글입니다. 반응형 웹 사이트 이미지 글입니다.</figcaption>
+                                <img src="img/blog3_@1.jpg"
+                                    srcset="img/blog3_@1.jpg 1x, img/blog3_@2.jpg 2x, img/blog3_@3.jpg 2x"
+                                    alt="normal img" width="100%" />
+                                <figcaption>반응형 웹 사이트 이미지 글입니다. 반응형 웹 사이트 이미지 글입니다. 반응형 웹 사이트 이미지 글입니다. 반응형 웹 사이트 이미지
+                                    글입니다. 반응형 웹 사이트 이미지 글입니다.</figcaption>
                             </figure>
                         </div>
 
@@ -276,15 +278,18 @@
                     <article class="column col5">
                         <!-- title, description -->
                         <h4 class="col_tit">Blend Effect</h4>
-                        <p class="col_desc"> Background Blend Mode & Mix-Blend-Mode </p>
-                        
+                        <p class="col_desc"> Background Blend Mode & Mix-Blend-Mode 등을 표현합니다. 이미지를 클릭해보세요!</p>
+
                         <!-- light box -->
                         <div class="lightbox square clearfix">
                             <a href="img/light01_s.jpg"><img src="img/light01.jpg" alt="img"></img><em>blur</em></a>
-                            <a href="img/light02_s.jpg"><img src="img/light02.jpg" alt="img"></img><em>brightness</em></a>
+                            <a href="img/light02_s.jpg"><img src="img/light02.jpg"
+                                    alt="img"></img><em>brightness</em></a>
                             <a href="img/light03_s.jpg"><img src="img/light03.jpg" alt="img"></img><em>contrast</em></a>
-                            <a href="img/light04_s.jpg"><img src="img/light04.jpg" alt="img"></img><em>grayscale</em></a>
-                            <a href="img/light05_s.jpg"><img src="img/light05.jpg" alt="img"></img><em>hur-rotate</em></a>
+                            <a href="img/light04_s.jpg"><img src="img/light04.jpg"
+                                    alt="img"></img><em>grayscale</em></a>
+                            <a href="img/light05_s.jpg"><img src="img/light05.jpg"
+                                    alt="img"></img><em>hur-rotate</em></a>
                             <a href="img/light06_s.jpg"><img src="img/light06.jpg" alt="img"></img><em>invert</em></a>
                             <a href="img/light07_s.jpg"><img src="img/light07.jpg" alt="img"></img><em>opacity</em></a>
                             <a href="img/light08_s.jpg"><img src="img/light08.jpg" alt="img"></img><em>saturate</em></a>
@@ -303,7 +308,10 @@
                         </video> -->
 
                         <div class="video">
-                            <iframe src="https://www.youtube.com/embed/ClCW2A1355A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <iframe src="https://www.youtube.com/embed/ClCW2A1355A" title="YouTube video player"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
                         </div>
                     </article>
                 </section>
@@ -312,7 +320,7 @@
                     <article class="column col7">
                         <!-- title, description -->
                         <h4 class="col_tit">Effect1</h4>
-                        <p class="col_desc"> CSS의 transform을 이용한 마우스 오버효과 </p>
+                        <p class="col_desc"> CSS의 transform을 이용한 애니메이션입니다. 마우스를 올려보세요! </p>
                         <!-- side 1-->
                         <div class="side1">
                             <figure class="front"><img src="img/side1.jpg" alt="img"></figure>
@@ -324,31 +332,35 @@
                     <article class="column col8">
                         <!-- title, description -->
                         <h4 class="col_tit">Effect2</h4>
-                        <p class="col_desc"> CSS의 transform을 이용한 마우스 오버효과 </p>
+                        <p class="col_desc"> CSS의 transform을 이용한 애니메이션입니다. 마우스를 올려보세요! </p>
                         <!-- side 2-->
                         <div class="side2">
                             <figure class="front"><img src="img/side2.jpg" alt="img">
-                                <figcaption><h3>Hover Effect</h3></figcaption>
+                                <figcaption>
+                                    <h3>Hover Effect</h3>
+                                </figcaption>
                             </figure>
                             <figure class="back"><img src="img/side4.jpg" alt="img">
-                                <figcaption><h3>Hover Effect</h3></figcaption>
+                                <figcaption>
+                                    <h3>Hover Effect</h3>
+                                </figcaption>
                             </figure>
                         </div>
                     </article>
                     <article class="column col9">
-                         <!-- title, description -->
-                         <h4 class="col_tit">Effect3</h4>
-                         <p class="col_desc"> CSS의 transform을 이용한 마우스 오버효과 </p>
-                         <!-- side 3-->
-                         <div class="side3">
-                             <figure>
+                        <!-- title, description -->
+                        <h4 class="col_tit">Effect3</h4>
+                        <p class="col_desc"> CSS의 transform을 이용한 애니메이션입니다. 마우스를 올려보세요! </p>
+                        <!-- side 3-->
+                        <div class="side3">
+                            <figure>
                                 <img src="img/side3.jpg" alt="img">
                                 <figcaption>
                                     <h3>Hover <em>Effect</em></h3>
                                 </figcaption>
                             </figure>
 
-                         </div>
+                        </div>
                     </article>
             </div>
         </section>
@@ -383,7 +395,7 @@
         //이미지 슬라이더 : $(".클래스명").slick(효과option)
         $(".slider").slick({
             dots: true,
-            Infinity:true,
+            Infinity: true,
             autoplay: true,
             autoplaySpeed: 3000,
             arrows: true,
@@ -392,7 +404,7 @@
                 settings: {
                     arrows: false,
                     dots: false,
-                    autoplay : false,
+                    autoplay: false,
                 }
             }]
         });
@@ -403,31 +415,32 @@
         //  lightbox
         $(".lightbox").lightGallery({
             autoplay: true,
-            pause:3000,
+            pause: 3000,
             progressBar: true
         });
     </script>
 
     <script>
         // 접기, 펼치기
-        $(".btn").click(function(e){
+        $(".btn").click(function (e) {
             e.preventDefault();
             $(".nav").slideToggle();
             $(".btn").toggleClass("open"); // 버튼에 open이라는 클래스 추가
 
-            if($(".btn").hasClass("open")){
+            if ($(".btn").hasClass("open")) {
                 // open 클래스가 있을 때
-                $(".btn").find("i").attr("class", "fa fa-angle-up"); // btn 아래의 i태그를  찾고, attr(속성)을 변경해줌 (class를 찾고, 클래스명 변경)
-            }else{
+                $(".btn").find("i").attr("class",
+                "fa fa-angle-up"); // btn 아래의 i태그를  찾고, attr(속성)을 변경해줌 (class를 찾고, 클래스명 변경)
+            } else {
                 // open 클래스가 없을 때 
                 $(".btn").find("i").attr("class", "fa fa-angle-down")
             }
         })
 
         // nav를 펼친 상태에서, 모바일환경 이동 시 버그
-        $(window).resize(function(){
+        $(window).resize(function () {
             var browserWidth = $(window).width(); // 브라우저 width
-            if (browserWidth > 600){
+            if (browserWidth > 600) {
                 $(".nav").removeAttr("style");
                 // .nav에 자동으로 display:block이 생겨서 나오는 버그이므로, width가 600이하일때는 style을 제거함
             }
