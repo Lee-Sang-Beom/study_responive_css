@@ -26,3 +26,18 @@ Project - Study Response Web
     
     - 또한, 따라하기에 그치지 않고 실습한 내용을 바탕으로 페이퍼, 디지털 프로토타입으로 상상하는 레이아웃을 직접 그려보고,
       작은 미니프로젝트를 만들어보며 감을 잊지 않도록 할 것입니다. 
+
+### - CSS, SASS/SCSS 사용 실력 향상을 위한 취미 프로젝트
+	- 위에서 언급한 다짐대로 따라하기 식이 아닌, 스스로 HTML/CSS를 설계해보고 작성해보는 과정을 거쳤습니다.
+
+	- 대중적으로 인기있는 게임을 주제로 잡아 진행하고 있습니다.
+    
+
+1. 강화 시뮬레이션 (개발 완료)
+- [**github**](https://github.com/Lee-Sang-Beom/Upgrade_Simulation) 
+- [**deploy link**](https://lee-sang-beom.github.io/Upgrade_Simulation//) 
+	
+	 
+2. Ori Series Game : Introduce WebSite (진행 중..)
+- [**github**](https://github.com/Lee-Sang-Beom/Ori-Fan-Site)  
+	
