@@ -37,7 +37,6 @@ Project - Study Response Web
 - [**github**](https://github.com/Lee-Sang-Beom/Upgrade_Simulation) 
 - [**deploy link**](https://lee-sang-beom.github.io/Upgrade_Simulation//) 
 	
-	 
 2. Ori Series Game : Introduce WebSite (진행 중..)
 - [**github**](https://github.com/Lee-Sang-Beom/Ori-Fan-Site) 
 - [**deploy link**](https://ori-fan-site.vercel.app/)   
