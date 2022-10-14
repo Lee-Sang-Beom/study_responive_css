@@ -33,17 +33,17 @@ Project - Study Response Web
 	- 대중적으로 인기있는 게임을 주제로 잡아 진행하고 있습니다.
     
 
-1. 강화 시뮬레이션 (개발 완료)
+1. 카카오톡 채팅 레이아웃 구현(SCSS)
+- [**github**](https://github.com/Lee-Sang-Beom/study_saas)
+- [**Deploy**](https://lee-sang-beom.github.io/study_saas/)
+
+2. 강화 시뮬레이션 (개발 완료)
 - [**github**](https://github.com/Lee-Sang-Beom/Upgrade_Simulation) 
 - [**deploy link**](https://lee-sang-beom.github.io/Upgrade_Simulation//) 
 	
-2. Ori Series Game : Introduce WebSite (진행 중..)
+3. Ori Series Game : Introduce WebSite (진행 중..)
 - [**github**](https://github.com/Lee-Sang-Beom/Ori-Fan-Site) 
 - [**deploy link**](https://ori-fan-site.vercel.app/)   
-
-3. 카카오톡 채팅 레이아웃 구현(SCSS)
-- [**github**](https://github.com/Lee-Sang-Beom/study_saas)
-- [**Deploy**](https://lee-sang-beom.github.io/study_saas/)
 
 4. Jekyll Theme: Hydn 수정 (진행예정)
 
