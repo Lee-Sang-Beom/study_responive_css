@@ -41,7 +41,11 @@ Project - Study Response Web
 - [**github**](https://github.com/Lee-Sang-Beom/Ori-Fan-Site) 
 - [**deploy link**](https://ori-fan-site.vercel.app/)   
 
-3. Jekyll Theme: Hydn 수정 (진행예정)
+3. 카카오톡 채팅 레이아웃 구현(SCSS)
+- [**github**](https://github.com/Lee-Sang-Beom/study_saas)
+- [**Deploy**](https://lee-sang-beom.github.io/study_saas/)
+
+4. Jekyll Theme: Hydn 수정 (진행예정)
 
 	- 학교 친구의 제안에 따라, Jekyll을 이용해 정적 블로그를 만들 때 사용할 수 있는 테마를 만드는 데 기여한 경험이 있습니다.
 	
